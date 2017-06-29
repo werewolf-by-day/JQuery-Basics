@@ -3,17 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Like Magic! Ninja or Cat!?</title>
+    <link rel="stylesheet" style="text/css" href="ninja2cat.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
 
+        $('img').click(function() {
 
-      })
+        var x = $(this).attr("data-alt-src");
+
+        var y = $(this).attr("src");
+
+        $(this).attr("src", x);
+
+        $(this).attr("data-alt-src", y);
+        });
+      });
 
     </script>
   </head>
   <body>
-
+    <div id="container">
+      <img src="ninja0.png" data-alt-src="cat0.png">
+      <img src="ninja1.png" data-alt-src="cat1.png">
+      <img src="ninja2.png" data-alt-src="cat2.png">
+      <img src="ninja3.png" data-alt-src="cat3.png">
+      <img src="ninja4.png" data-alt-src="cat4.png">
+    </div>
   </body>
 
 
