@@ -1,0 +1,13 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+img{
+  width: 25%;
+}
+
+.container {
+  width: 1080px;
+  vertical-align: top;
+}
